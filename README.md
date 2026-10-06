@@ -4,8 +4,7 @@
 > A 2D pixel-art, story-driven game where you design, launch, and fly a satellite, then find out how every choice shaped the outcome.
 
 **Built for:** NASA Space Apps Challenge 2026, challenge **"Space Mission Design Game"**
-**Event:** [Your local event name, city]
-**Team:** [Your team name]
+**Team:** *SleepDeprived Ninjas*
 **Play it:** *Hosted link coming soon*
 
 ---
