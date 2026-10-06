@@ -171,17 +171,12 @@ NASA data is openly shared in accordance with the [EOSDIS Data Use and Citation 
 
 | Name | Role |
 |---|---|
-| [Name] | [e.g. Game design and story] |
-| [Name] | [e.g. Programming] |
-| [Name] | [e.g. Pixel art] |
-| [Name] | [e.g. Research and NASA data] |
+| Khushi | Game design and story |
+| Sabbir | Programming |
+| Faujia | Pixel art |
+| Farin | Research and NASA data |
+| Siyam | Research and Testing |
 
----
-
-## 📜 Licence
-
-**[Pick a licence — MIT is a common choice for a challenge project — and add a `LICENSE` file; there isn't one in the repo yet.]**
-NASA data and third-party assets remain under their own licences, as listed in `docs/CREDITS.md`.
 
 ---
 
