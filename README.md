@@ -5,7 +5,7 @@
 
 **Built for:** NASA Space Apps Challenge 2026, challenge **"Space Mission Design Game"**
 **Team:** *"SleepDeprived Ninjas"*
-
+**Click [HERE](https://bee92-exe.github.io/what-if/) to play**
 ---
 
 ## 📖 The Story
