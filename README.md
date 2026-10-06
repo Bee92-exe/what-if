@@ -173,7 +173,7 @@ NASA data is openly shared in accordance with the [EOSDIS Data Use and Citation 
 |---|---|
 | Khushi | Game design and story |
 | Sabbir | Programming |
-| Faujia | Pixel art |
+| Faujia | Pixel art and Planning |
 | Farin | Research and NASA data |
 | Siyam | Research and Testing |
 
