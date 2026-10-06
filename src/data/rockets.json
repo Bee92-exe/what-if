@@ -1,0 +1,38 @@
+{
+  "$comment": "Launch vehicles (build plan 4.4). Placeholders pending NASA data ingestion.",
+  "rockets": [
+    {
+      "id": "rideshare",
+      "name": "Ride-share slot",
+      "capacityKg": 30,
+      "cost": 1.0,
+      "reliability": 0.92,
+      "schedule": "fixed",
+      "unlockedBy": "start",
+      "origin": "placeholder",
+      "blurb": "Cheap, on someone else's schedule."
+    },
+    {
+      "id": "small",
+      "name": "Small launcher",
+      "capacityKg": 120,
+      "cost": 2.8,
+      "reliability": 0.90,
+      "schedule": "flexible",
+      "unlockedBy": "start",
+      "origin": "placeholder",
+      "blurb": "Yours alone, but newer and a bit less proven."
+    },
+    {
+      "id": "medium",
+      "name": "Medium launcher",
+      "capacityKg": 400,
+      "cost": 5.5,
+      "reliability": 0.97,
+      "schedule": "flexible",
+      "unlockedBy": "ch3",
+      "origin": "placeholder",
+      "blurb": "Proven workhorse. Expensive."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "mission-director",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Mission Director: The Padma Files - a 2D pixel-art story-driven space mission design game (NASA Space Apps Challenge)",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "validate:data": "node tools/validate_data.js",
+    "balance": "node tools/balance_sim.js"
+  },
+  "dependencies": {
+    "phaser": "^3.90.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0",
+    "vitest": "^3.2.0"
+  }
+}

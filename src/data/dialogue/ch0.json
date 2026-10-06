@@ -1,0 +1,95 @@
+{
+  "$comment": "Chapter 0 — The Ghost of Shapla-1 (tutorial, ~3 min). Investigate the old failure; learn to read a budget; Kabir's confession.",
+  "nodes": [
+    { "id": "ch0_n01", "speaker": "narrator", "text": "Nine years ago, our first satellite went dark over the Bay of Bengal. They say bad luck.", "next": "ch0_n02" },
+    { "id": "ch0_n02", "speaker": "narrator", "text": "Tonight, the archive room hums. Kabir-bhai unlocks the old telemetry with a key he keeps on the same ring as his house keys.", "next": "ch0_n03" },
+    {
+      "id": "ch0_n03",
+      "speaker": "kabir",
+      "portrait": "neutral",
+      "text": "Every engineer visits this room eventually. Come. The wreck of Shapla-1 still has something to teach.",
+      "next": "ch0_n04"
+    },
+    {
+      "id": "ch0_n04",
+      "speaker": "kabir",
+      "portrait": "neutral",
+      "text": "Think of a spacecraft as a rickshaw. Mass is passengers. Power is the puller's legs. Panels are how much he can eat. The battery is what he saved for the hill.",
+      "next": "ch0_n05",
+      "set": { "toldRickshawAnalogy": true }
+    },
+    {
+      "id": "ch0_n05",
+      "speaker": "kabir",
+      "portrait": "worried",
+      "text": "Shapla-1's puller had weak legs and no savings. The panels gave less than the instruments ate. In eclipse, the battery drained to zero. Everything died in the dark.",
+      "next": "ch0_n06"
+    },
+    {
+      "id": "ch0_n06",
+      "speaker": "narrator",
+      "text": "The debrief board glows. Three clues float in the amber light: the battery, the panels, the instrument power draw.",
+      "next": "ch0_n07",
+      "set": { "tutorialBoardShown": true }
+    },
+    {
+      "id": "ch0_n07",
+      "speaker": "kabir",
+      "portrait": "neutral",
+      "text": "Tell me what killed her. What do you see first?",
+      "choices": [
+        { "text": "The battery was too small for the eclipse.", "set": { "tutorialFirstClue": "battery" }, "next": "ch0_n08a" },
+        { "text": "The instruments drew more than the panels made.", "set": { "tutorialFirstClue": "power" }, "next": "ch0_n08b" }
+      ]
+    },
+    {
+      "id": "ch0_n08a",
+      "speaker": "kabir",
+      "portrait": "happy",
+      "text": "Sharp. Forty watt-hours, and the night side eats more than that each orbit. But there is a deeper cut.",
+      "next": "ch0_n09"
+    },
+    {
+      "id": "ch0_n08b",
+      "speaker": "kabir",
+      "portrait": "happy",
+      "text": "Right — day and night, the instruments ate more than the panels made. The battery only delayed the funeral. But there is a deeper cut.",
+      "next": "ch0_n09"
+    },
+    {
+      "id": "ch0_n09",
+      "speaker": "kabir",
+      "portrait": "worried",
+      "text": "When I signed her power budget, the numbers said: enough. Not comfortable. Not with margin. Enough — like a rickshaw puller fed exactly one meal a day.",
+      "next": "ch0_n10"
+    },
+    {
+      "id": "ch0_n10",
+      "speaker": "kabir",
+      "portrait": "worried",
+      "text": "A fuse blows, a storm delays a pass, an instrument runs hot. Luck finds the crack every time. I left the crack. I signed it.",
+      "next": "ch0_n11"
+    },
+    {
+      "id": "ch0_n11",
+      "speaker": "narrator",
+      "text": "He looks at the shapla emblem on the old mission patch for a long moment. The rain keeps time on the window.",
+      "next": "ch0_n12"
+    },
+    {
+      "id": "ch0_n12",
+      "speaker": "kabir",
+      "portrait": "neutral",
+      "text": "Luck is just margin you didn't plan. Write that somewhere you will not lose it.",
+      "next": "ch0_n13",
+      "set": { "askedAboutShapla": true, "kabirConfessed": true, "unlockedNotebook_margin": true }
+    },
+    {
+      "id": "ch0_n13",
+      "speaker": "narrator",
+      "text": "The archive light dims. Somewhere upstairs, a weather radar paints a slow white spiral in the Bay of Bengal. Tomorrow, there will be no time for ghosts.",
+      "next": "ch0_n14"
+    },
+    { "id": "ch0_n14", "speaker": "kabir", "portrait": "happy", "text": "Come. If we are going to stare down a cyclone, you should meet the rest of the family.", "next": null }
+  ]
+}

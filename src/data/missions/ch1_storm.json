@@ -1,0 +1,31 @@
+{
+  "$comment": "Chapter 1 mission — Eye on the Storm. All numbers placeholder (4.10). Objectives are the observation windows.",
+  "id": "ch1_storm",
+  "title": "Eye on the Storm",
+  "goal": "Watch the cyclone from space and warn the coast in time.",
+  "budget": 6.0,
+  "deadlineDays": 10,
+  "allowedBus": ["bus6u", "bus12u"],
+  "allowedRockets": ["rideshare", "small"],
+  "orbits": ["leo_inclined", "sso_600", "high_leo_1200"],
+  "targets": [
+    { "id": "cyc_formation", "name": "spot the storm forming", "dayRange": [1, 3], "needs": ["visible_or_thermal"], "weight": 0.2 },
+    { "id": "cyc_intensify", "name": "measure how strong it grows", "dayRange": [4, 6], "needs": ["thermal"], "weight": 0.4 },
+    { "id": "cyc_landfall_prep", "name": "track it to the coast", "dayRange": [7, 9], "needs": ["any"], "weight": 0.4 }
+  ],
+  "weather": { "cloudCoverByDay": [0.3, 0.5, 0.7, 0.9, 0.9, 0.8, 0.8, 0.9, 0.6, 0.5] },
+  "eventPool": ["solar_flare", "rain_out", "buffer_full", "battery_stress", "tracking_glitch", "alam_calls"],
+  "outcomeTiers": [
+    { "minScore": 85, "villagesWarned": "all", "text": "Evacuation began a full day early." },
+    { "minScore": 60, "villagesWarned": "most", "text": "Most coastal villages were ready in time." },
+    { "minScore": 0, "villagesWarned": "some", "text": "Warnings came late. Kabir stays quiet." }
+  ],
+  "briefing": [
+    { "speaker": "alam", "text": "The meteorological department confirms it. A depression in the Bay. It will make landfall in twelve days, maybe less." },
+    { "speaker": "alam", "text": "You have a launch window in ten. I expect this agency to be on the news for the right reason." },
+    { "speaker": "sharmin", "text": "Six million taka. Not one taka more — and every taka has a mother, Director." },
+    { "speaker": "tanvir", "text": "We need cloud-top temperatures — that means thermal infrared. And pictures the public can understand. Visible camera if we can afford it." },
+    { "speaker": "kabir", "text": "The ride-share slot holds thirty kilograms. Design inside it, and we launch on time. That is the whole game." },
+    { "speaker": "kabir", "text": "Come to the design room when you are ready. We build her together." }
+  ]
+}

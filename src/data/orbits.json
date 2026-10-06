@@ -1,0 +1,44 @@
+{
+  "$comment": "Orbit rows (build plan 4.4). Simplified game values; VERIFY against orbital mechanics. Period T = 2*pi*sqrt(a^3/mu), mu=398600 km^3/s^2. Eclipse = asin(Re/a)/pi worst case. Placeholders pending ingestion.",
+  "orbits": [
+    {
+      "id": "leo_inclined",
+      "name": "LEO (inclined)",
+      "altitudeKm": 500,
+      "periodMin": 94.6,
+      "eclipseFraction": 0.37,
+      "passesPerDay": 5,
+      "passMinutes": 8,
+      "revisitDays": 3,
+      "radiationFactor": 1.0,
+      "origin": "placeholder",
+      "blurb": "Cheap to reach, frequent passes, high eclipse share."
+    },
+    {
+      "id": "sso_600",
+      "name": "Sun-synchronous",
+      "altitudeKm": 600,
+      "periodMin": 96.7,
+      "eclipseFraction": 0.3,
+      "passesPerDay": 4,
+      "passMinutes": 8,
+      "revisitDays": 2,
+      "radiationFactor": 1.2,
+      "origin": "placeholder",
+      "blurb": "Same lighting every pass. Good for imaging."
+    },
+    {
+      "id": "high_leo_1200",
+      "name": "High LEO",
+      "altitudeKm": 1200,
+      "periodMin": 109,
+      "eclipseFraction": 0.27,
+      "passesPerDay": 6,
+      "passMinutes": 9,
+      "revisitDays": 1.5,
+      "radiationFactor": 2.0,
+      "origin": "placeholder",
+      "blurb": "More coverage, more radiation."
+    }
+  ]
+}

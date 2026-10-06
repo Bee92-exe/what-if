@@ -1,0 +1,50 @@
+{
+  "$comment": "Chapter 2 — The Silent River (intro). Commentary varies with chapter-1 flags.",
+  "nodes": [
+    { "id": "ch2_n01", "speaker": "narrator", "text": "Three weeks after the cyclone, the rivers are still rising. The monsoon has parked itself over the delta like a guest who will not leave.", "next": "ch2_n02" },
+    {
+      "id": "ch2_n02",
+      "speaker": "sharmin",
+      "portrait": "neutral",
+      "when": { "flag": "overpromised", "is": true },
+      "text": "\"Tomorrow, definitely.\" That is what you told Alam. The newspapers quoted it. I am holding you to every word.",
+      "next": "ch2_n03"
+    },
+    {
+      "id": "ch2_n02b",
+      "speaker": "sharmin",
+      "portrait": "neutral",
+      "when": { "flag": "alamHonest", "is": true },
+      "text": "Alam told the minister you would be honest about timelines. He respects that. So do I. Here is the honest number.",
+      "next": "ch2_n03"
+    },
+    {
+      "id": "ch2_n03",
+      "speaker": "tanvir",
+      "portrait": "neutral",
+      "text": "Satellite pictures of the delta have stopped. Cloud cover nine out of ten. The river is rising in the dark.",
+      "next": "ch2_n04"
+    },
+    {
+      "id": "ch2_n04",
+      "speaker": "kabir",
+      "portrait": "neutral",
+      "text": "Not entirely dark. Radar sees through cloud — it paints the ground with its own light. The big agencies fly SAR exactly for this. VERIFY: NASA-ISRO NISAR.",
+      "next": "ch2_n05"
+    },
+    {
+      "id": "ch2_n05",
+      "speaker": "kabir",
+      "portrait": "happy",
+      "text": "And we have the catalog now: a 27-unit bus, real panels, the hungry radar. Design her well. She will be heavier than anything we have flown.",
+      "next": "ch2_n06"
+    },
+    {
+      "id": "ch2_n06",
+      "speaker": "narrator",
+      "text": "Rain writes on the window in an alphabet nobody can read. Somewhere downriver, a union leader charges a lantern.",
+      "next": "ch2_n07"
+    },
+    { "id": "ch2_n07", "speaker": "kabir", "portrait": "neutral", "text": "The river will not wait. To the design room.", "next": null }
+  ]
+}

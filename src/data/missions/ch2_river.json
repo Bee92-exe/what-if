@@ -1,0 +1,31 @@
+{
+  "$comment": "Chapter 2 mission — The Silent River. Clouds block the optical camera for days; SAR sees through but stresses power, mass, and budget.",
+  "id": "ch2_river",
+  "title": "The Silent River",
+  "goal": "See the flood through days of cloud and warn the river villages.",
+  "budget": 8.0,
+  "deadlineDays": 10,
+  "allowedBus": ["bus6u", "bus12u", "bus27u"],
+  "allowedRockets": ["rideshare", "small"],
+  "orbits": ["leo_inclined", "sso_600", "high_leo_1200"],
+  "targets": [
+    { "id": "flood_rise", "name": "watch the river rise", "dayRange": [1, 3], "needs": ["any"], "weight": 0.25 },
+    { "id": "flood_spread_night", "name": "map the flood at night", "dayRange": [4, 6], "needs": ["thermal"], "weight": 0.35 },
+    { "id": "flood_through_cloud", "name": "see the flood through cloud", "dayRange": [7, 9], "needs": ["thermal"], "weight": 0.4 }
+  ],
+  "weather": { "cloudCoverByDay": [0.9, 0.95, 0.9, 0.85, 0.9, 0.95, 0.9, 0.85, 0.8, 0.7] },
+  "eventPool": ["battery_stress", "buffer_full", "rain_out", "tracking_glitch", "solar_flare", "alam_calls"],
+  "outcomeTiers": [
+    { "minScore": 85, "villagesWarned": "all", "text": "Rescue boats were staged before the water arrived." },
+    { "minScore": 60, "villagesWarned": "most", "text": "Most unions along the river knew which way to run." },
+    { "minScore": 0, "villagesWarned": "some", "text": "The river stayed silent on the maps. People guessed." }
+  ],
+  "briefing": [
+    { "speaker": "tanvir", "text": "The monsoon has parked itself over the delta. Days of full cloud cover. The visible camera is useless — it will photograph the tops of clouds, not the flood." },
+    { "speaker": "kabir", "text": "There is a way to see through cloud: radar. Synthetic Aperture Radar — SAR. It lights the ground with its own signal and listens." },
+    { "speaker": "sharmin", "text": "I have read about SAR. It eats power for breakfast and costs more than my whole year's budget line." },
+    { "speaker": "kabir", "text": "Which is why we also bought bigger buses. Twenty-seven units, three payload slots, and panels to feed them." },
+    { "speaker": "tanvir", "text": "Thermal infrared still works at night and reads the flood's heat signature. SAR works in daylight through anything. Choose your weapons." },
+    { "speaker": "alam", "text": "The river villages need warning before the second crest. You have ten days. Again." }
+  ]
+}

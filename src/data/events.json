@@ -1,0 +1,131 @@
+{
+  "$comment": "Mission events (4.6). Effects are declarative; sim/events.js applies them. Fairness rule: every outcome must be explainable by visible numbers.",
+  "events": [
+    {
+      "id": "solar_flare",
+      "name": "Solar flare",
+      "minDay": 2,
+      "weight": 1.0,
+      "intro": "Solar flare inbound. The sun spits a wall of charged particles at the orbit.",
+      "choices": [
+        {
+          "text": "Sleep through it (lose a day)",
+          "effect": { "skipDay": true },
+          "outcome": "The spacecraft sleeps through the flare. A whole day of coverage is gone, but every part is intact.",
+          "log": "Went dark for the flare. Woke up grumpy but whole."
+        },
+        {
+          "text": "Keep working (risky)",
+          "effect": { "riskInstrumentDamage": 0.35 },
+          "outcome": "The imaging computer took a hit. Part of today's data is corrupt.",
+          "log": "Rode out the flare. The memory banks will remember this."
+        }
+      ]
+    },
+    {
+      "id": "rain_out",
+      "name": "Ground station rain-out",
+      "minDay": 1,
+      "weight": 1.2,
+      "intro": "Monsoon squall over the ground station. The dish cannot see the satellite.",
+      "choices": [
+        {
+          "text": "Wait for the next pass",
+          "effect": { "downlinkHalf": true },
+          "outcome": "Data stays aboard. Half the usual downlink today.",
+          "log": "Rain ate the dish's view. Data waited its turn."
+        },
+        {
+          "text": "Borrow a dish ($0.3M)",
+          "effect": { "costExtra": 0.3 },
+          "outcome": "The partner dish in another country takes the pass. Full downlink, extra spend.",
+          "log": "Borrowed a friend's dish. Worth every borrowed taka."
+        }
+      ]
+    },
+    {
+      "id": "buffer_full",
+      "name": "Buffer nearly full",
+      "minDay": 3,
+      "weight": 1.0,
+      "intro": "Onboard storage is nearly full. New images will overwrite the old.",
+      "choices": [
+        {
+          "text": "Throw away dull pictures",
+          "effect": { "bufferLossPct": 0.3 },
+          "outcome": "Housekeeping frames dumped. The important science stays.",
+          "log": "Threw away what I did not need. Storage: breathing room."
+        },
+        {
+          "text": "Camera off for a day",
+          "effect": { "skipImagingToday": true },
+          "outcome": "No new images today, but nothing is lost.",
+          "log": "Camera off. I counted the clouds from memory."
+        }
+      ]
+    },
+    {
+      "id": "battery_stress",
+      "name": "Battery stress",
+      "minDay": 2,
+      "weight": 1.1,
+      "intro": "The battery ran deeper than design limits last night. The cells are cold and tired.",
+      "choices": [
+        {
+          "text": "Rest today - power save",
+          "effect": { "powerSaveToday": true },
+          "outcome": "Everything runs at half duty. Less science today, healthier battery.",
+          "log": "Ran on half rations. The cells thank me."
+        },
+        {
+          "text": "Push on (damages battery)",
+          "effect": { "batteryHitPct": 0.2 },
+          "outcome": "Full science day, but the battery took permanent damage to its capacity.",
+          "log": "Pushed through. My battery will never be the same."
+        }
+      ]
+    },
+    {
+      "id": "tracking_glitch",
+      "name": "Star tracker glitch",
+      "minDay": 3,
+      "weight": 0.9,
+      "intro": "The star tracker lost lock. Pointing is wobbling.",
+      "choices": [
+        {
+          "text": "Reset it (lose a pass)",
+          "effect": { "loseOnePass": true },
+          "outcome": "Pointing restored. One pass lost while it rebooted.",
+          "log": "Rebooted my own eyes. The stars lined up again."
+        },
+        {
+          "text": "Keep going (blurry pictures)",
+          "effect": { "blurryImages": true },
+          "outcome": "Half of today's images are smeared. Analysts can still use some.",
+          "log": "The stars smeared. So did my photographs."
+        }
+      ]
+    },
+    {
+      "id": "alam_calls",
+      "name": "Secretary Alam calls",
+      "minDay": 2,
+      "weight": 0.8,
+      "intro": "\"The minister is asking when we will have pictures. What do I tell him?\"",
+      "choices": [
+        {
+          "text": "Tell him the truth",
+          "set": { "alamHonest": true },
+          "outcome": "Alam is quiet, then: \"Good. I will manage expectations.\"",
+          "log": "Told the truth upstairs. It cost a little now, bought a lot later."
+        },
+        {
+          "text": "Promise it for tomorrow",
+          "set": { "overpromised": true },
+          "outcome": "Alam promises the moon. The control room exchange a look.",
+          "log": "The director promised miracles. I just make pictures."
+        }
+      ]
+    }
+  ]
+}

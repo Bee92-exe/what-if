@@ -1,0 +1,41 @@
+{
+  "$comment": "Glossary entries (plan section 9). Each links a game concept to a real mission or dataset. VERIFY-marked entries need a source in docs/CREDITS.md before shipping.",
+  "entries": [
+    {
+      "id": "margin",
+      "unlockedBy": "unlockedNotebook_margin",
+      "term": "Margin",
+      "text": "The gap between 'enough' and 'enough even when things go wrong'. Shapla-1 had none. Real missions keep 20-30% on power and mass."
+    },
+    {
+      "id": "eclipse",
+      "unlockedBy": "tutorialBoardShown",
+      "term": "Eclipse",
+      "text": "Every orbit crosses Earth's shadow. A 500 km satellite spends about 35 minutes of each 95-minute orbit in the dark. VERIFY: eclipse fraction asin(Re/a)/pi."
+    },
+    {
+      "id": "thermal_infrared",
+      "unlockedBy": "tutorialFirstClue",
+      "term": "Thermal infrared",
+      "text": "Cameras that measure heat can see at night, and cyclone cloud-top temperature tells forecasters how strong the storm is. Real weather satellites always carry one. VERIFY: e.g. VIIRS on Suomi NPP/NOAA-20."
+    },
+    {
+      "id": "sar",
+      "unlockedBy": "tutorialFirstClue",
+      "term": "Synthetic Aperture Radar (SAR)",
+      "text": "Radar that paints the ground with its own signal and listens for the echo. It sees through clouds and at night — and maps floods under the monsoon. VERIFY: e.g. NASA-ISRO NISAR, ESA Sentinel-1."
+    },
+    {
+      "id": "sun_synchronous",
+      "unlockedBy": "tutorialFirstClue",
+      "term": "Sun-synchronous orbit",
+      "text": "An orbit tilted so the satellite crosses every place at the same local solar time — same lighting every day, easy to compare images. VERIFY: typical 600-800 km, ~98° inclination."
+    },
+    {
+      "id": "downlink",
+      "unlockedBy": "tutorialFirstClue",
+      "term": "Downlink",
+      "text": "The radio pipeline home. An S-band transmitter manages about 1 Mbps; X-band 10+. Pictures you cannot send home are pictures you never took."
+    }
+  ]
+}
