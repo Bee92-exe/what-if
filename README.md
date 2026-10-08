@@ -161,7 +161,6 @@ NASA data is openly shared in accordance with the [EOSDIS Data Use and Citation 
 - [ ] Hosted playable build
 - [ ] Stretch: Chapter 3 (lunar lander), Chapter 4 (deep space), sandbox mode, Bangla language
 
-*(Tick the boxes as you finish them.)*
 
 ---
 
